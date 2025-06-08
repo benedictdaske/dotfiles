@@ -12,6 +12,9 @@ alias ..4 'cd ../../../..'
 alias ..5 'cd ../../../../..'
 
 alias y yazi
+alias vi nvim
+alias vim nvim
+alias v nvim
 alias la 'ls -lisa'
 
 
@@ -35,5 +38,3 @@ alias ,sc 'git switch -c'
 alias ,b 'git branch'
 alias ,l 'git log'
 alias ,lf 'git log --oneline --graph --decorate'
-
-
