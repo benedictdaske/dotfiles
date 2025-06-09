@@ -1,9 +1,13 @@
-theme = catppuccin-mocha
+# theme = catppuccin-mocha
+theme = catppuccin-macchiato
 font-size = 13
-font-family = JetBrains Mono
+font-family = JetBrainsMono Nerd Font Mono
 background-opacity = 0.92
 background-blur-radius = 20
+cursor-style = bar
+adjust-cursor-thickness = 1
+adjust-cursor-height = -5%
+cursor-opacity = 0.8
 
 mouse-hide-while-typing = true
-macos-option-as-alt = true
 
