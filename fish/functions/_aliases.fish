@@ -1,4 +1,3 @@
-
 alias french 'cd ~/life/uni/8-semester-ba/french-2-2'
 alias comprog 'cd ~/life/uni/8-semester-ba/comprog/CPT'
 
@@ -16,7 +15,7 @@ alias vi nvim
 alias vim nvim
 alias v nvim
 alias la 'ls -lisa'
-
+alias decaf caffeinate
 
 alias ,a 'git add'
 alias ,ad 'git add .'
