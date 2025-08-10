@@ -7,6 +7,7 @@ if status is-interactive
 end
 
 starship init fish | source
+direnv hook fish | source
 
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
