@@ -4,11 +4,13 @@ alias comprog 'cd ~/life/uni/8-semester-ba/comprog/CPT'
 alias dotf 'cd ~/dev/os/dotfiles'
 alias nixc 'cd ~/dev/os/nix-config'
 
+alias next 'cd ~/dev/apps/nextsesh/'
+
 alias .. 'cd ..'
 alias ..2 'cd ../..'
 alias ..3 'cd ../../..'
 alias ..4 'cd ../../../..'
-alias ..5 'cd ../../../../..'
+alias ..5 'cd ../../../../..17:24:05'
 
 # alias y yazi
 alias vi nvim
