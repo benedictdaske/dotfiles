@@ -84,9 +84,9 @@ disabled = false
 
 [git_status]
 format = '([ ](bg:surface1)[\[$all_status$ahead_behind\]](fg:subtext1 bg:surface1))[](fg:surface1)'
-ahead = '[⇡${count}](fg:green)'
-behind = '[⇣${count}](fg:peach)'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+ahead = '[⇡${count}](fg:green bg:surface1)'
+behind = '[⇣${count}](fg:peach bg:surface1)'
+diverged = '⇕[⇡${ahead_count}](fg:green bg:surface1)[⇣${behind_count}](fg:peach bg:surface1)'
 staged = '+$count'
 
 [java]
