@@ -83,7 +83,8 @@ symbol = ' 󰘬 '
 disabled = false
 
 [git_status]
-
+format = '([\[$all_status$ahead_behind\]]($style) )'
+ahead = '⇡${count}'
 
 [java]
 format = '[ ](fg:surface1)[](fg:red)[$symbol](fg:base bg:red)[](fg:red bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
