@@ -4,16 +4,20 @@ format = """
 [╭](fg:surface1)\
 $os\
 $directory\
+$localip\
+$username\
 $fill\
 $nodejs\
 $dotnet\
 $python\
 $java\
 $c\
-$username\
 $git_branch\
+$git_metrics\
+$time\
+$shell\
 $line_break\
-$character
+$character\
 """
 
 right_format = """
@@ -30,7 +34,7 @@ add_newline = true
 # format options
 
 [c]
-format = '[─](fg:surface1)[](fg:blue)[$symbol](fg:base bg:blue)[](fg:blue bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[ ](fg:surface1)[](fg:blue)[$symbol](fg:base bg:blue)[](fg:blue bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
 symbol = ' C'
 
 [character]
@@ -48,34 +52,46 @@ style = 'bold yellow'
 
 [directory]
 format = '(fg:surface1)[ $read_only$truncation_symbol$path ](fg:subtext1 bg:surface1)[](fg:surface1)'
-# home_symbol = ""
-home_symbol = "~"
+home_symbol = "~"   # 
 truncate_to_repo = true
 truncation_length = 5
 truncation_symbol = '…/'
 read_only = ' '
 read_only_style = ''
 
-[directory.substitutions]
+# [directory.substitutions]
+# 'dotfiles/test' = 'test'
 
 [dotnet]
-format = '[─](fg:surface1)[](fg:mauve)[$symbol](fg:base bg:mauve)[](fg:mauve bg:surface1)[ $tfm](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[ ](fg:surface1)[](fg:mauve)[$symbol](fg:base bg:mauve)[](fg:mauve bg:surface1)[ $tfm](fg:subtext1 bg:surface1)[](fg:surface1)'
 symbol = ' .NET'
 
 [fill]
-symbol = '─'
+symbol = ' '
 style = 'fg:surface1'
 
 [git_branch]
-format = '[─](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $branch](fg:subtext1 bg:surface1)[](fg:surface1)'
-symbol = '  '
+# format = '[ ](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $branch](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[ ](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $branch](fg:subtext1 bg:surface1)'
+symbol = ' 󰘬 '
+
+[git_metrics]
+# format = '[ ](fg:surface1)[](fg:blue)[$symbol](fg:rosewater bg:blue)[](fg:blue bg:surface1)[ (\($virtualenv\) )$version](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[( [+$added](fg:subtext1 bg:surface1) )([-$deleted](fg:subtext1 bg:surface1))](bg:surface1)[](fg:surface1)'
+symbol = ' 󰘬 '
+disabled = false
 
 [java]
-format = '[─](fg:surface1)[](fg:red)[$symbol](fg:base bg:red)[](fg:red bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[ ](fg:surface1)[](fg:red)[$symbol](fg:base bg:red)[](fg:red bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
 symbol = ' Java'
 
+[localip]
+format = '[ ](fg:surface1)[](fg:surface1)[$localipv4](fg:subtext1 bg:surface1)[](fg:surface1)'
+ssh_only = true
+disabled = true
+
 [nodejs]
-format = '[─](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[ ](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
 symbol = '󰎙 Node.js'
 
 [os]
@@ -118,24 +134,31 @@ Unknown = ''
 Windows = ''
 
 [python]
-format = '[─](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
-symbol = ' python'
+format = '[ ](fg:surface1)[](fg:blue)[$symbol](fg:rosewater bg:blue)[](fg:blue bg:surface1)[ (\($virtualenv\) )$version](fg:subtext1 bg:surface1)[](fg:surface1)'
+symbol = ''
+version_format = '${raw}'
 
 [shell]
-format = '[─](fg:surface1)[](fg:blue)[   ](fg:base bg:blue)[](fg:blue bg:surface1)[ $indicator](fg:subtext1 bg:surface1)[](fg:surface1)'
-unknown_indicator = 'shell'
-powershell_indicator = 'powershell'
-fish_indicator = 'fish'
-disabled = false
+# format = '[ ](fg:surface1)[](fg:blue)[ $indicator ](fg:base bg:blue)[](fg:blue)'
+format = '[ ](fg:surface1)[$indicator](bg:base)'
+bash_indicator = ''
+fish_indicator = '🐠'
+powershell_indicator = ''
+unknown_indicator = '?'
+disabled = true
 
 [time]
-format = '[─](fg:surface1)[](fg:mauve)[ 󰦖 ](fg:base bg:mauve)[](fg:mauve bg:surface1)[ $time](fg:subtext1 bg:surface1)[](fg:surface1)'
+format = '[ ](fg:surface1)[](fg:mauve)[$time](fg:base bg:mauve)[](fg:mauve)'
+# format = '[ ](fg:surface1)[](fg:surface1)[$time](fg:subtext1 bg:surface1)[](fg:surface1)'
 time_format = '%H:%M'
-disabled = false
+disabled = true
 
 [username]
-format = '[─](fg:surface1)[](fg:yellow)[  ](fg:base bg:yellow)[](fg:yellow bg:surface1)[ $user](fg:subtext1 bg:surface1)[](fg:surface1)'
-show_always = true
+format = '[ ](fg:surface1)[](fg:yellow)[ $user ](fg:$style bg:yellow)[](fg:yellow)'
+show_always = false
+style_user = 'base'
+style_root = 'italic base'
+disabled = false
 
 
 # themes
