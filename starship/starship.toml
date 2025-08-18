@@ -77,7 +77,7 @@ symbol = ' 󰘬 '
 
 [git_metrics]
 # format = '[ ](fg:surface1)[](fg:blue)[$symbol](fg:rosewater bg:blue)[](fg:blue bg:surface1)[ (\($virtualenv\) )$version](fg:subtext1 bg:surface1)[](fg:surface1)'
-format = '[( [+$added](fg:subtext1 bg:surface1) )([-$deleted](fg:subtext1 bg:surface1))](bg:surface1)[](fg:surface1)'
+format = '[( [+$added](fg:green bg:surface1) )([-$deleted](fg:peach bg:surface1))](bg:surface1)[](fg:surface1)'
 symbol = ' 󰘬 '
 disabled = false
 
