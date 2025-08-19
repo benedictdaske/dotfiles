@@ -12,6 +12,7 @@ $dotnet\
 $python\
 $java\
 $c\
+$nix_shell\
 $git_branch\
 $git_metrics\
 $git_status\
@@ -79,7 +80,6 @@ symbol = ' 󰘬 '
 [git_metrics]
 # format = '[ ](fg:surface1)[](fg:blue)[$symbol](fg:rosewater bg:blue)[](fg:blue bg:surface1)[ (\($virtualenv\) )$version](fg:subtext1 bg:surface1)[](fg:surface1)'
 format = '[( [+$added](fg:green bg:surface1))( [-$deleted](fg:peach bg:surface1))](bg:surface1)'
-symbol = ' 󰘬 '
 disabled = false
 
 [git_status]
@@ -97,6 +97,11 @@ symbol = ' Java'
 format = '[ ](fg:surface1)[](fg:surface1)[$localipv4](fg:subtext1 bg:surface1)[](fg:surface1)'
 ssh_only = true
 disabled = true
+
+[nix_shell]
+format = '[ ](fg:surface1)[](fg:sapphire)[$symbol](fg:base bg:sapphire)[](fg:sapphire bg:surface1)[ $name](fg:subtext1 bg:surface1)[](fg:surface1)'
+symbol = '󱄅'
+disabled = false
 
 [nodejs]
 format = '[ ](fg:surface1)[](fg:green)[$symbol](fg:base bg:green)[](fg:green bg:surface1)[ $version](fg:subtext1 bg:surface1)[](fg:surface1)'
