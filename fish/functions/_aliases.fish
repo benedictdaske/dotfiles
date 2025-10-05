@@ -19,6 +19,9 @@ alias v nvim
 alias la 'ls -lisa'
 alias decaf caffeinate
 
+alias ,newb git_new_branch
+alias ,delb git_delete_branch
+
 alias ,a 'git add'
 alias ,ad 'git add .'
 alias ,rs 'git restore'
