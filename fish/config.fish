@@ -6,6 +6,10 @@ if status is-interactive
 
 end
 
+if test (uname) = Darwin
+    bind alt-backspace backward-kill-word
+end
+
 starship init fish | source
 direnv hook fish | source
 

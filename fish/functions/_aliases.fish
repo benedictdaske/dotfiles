@@ -1,5 +1,6 @@
-alias french 'cd ~/life/uni/8-semester-ba/french-2-2'
-alias comprog 'cd ~/life/uni/8-semester-ba/comprog/CPT'
+alias cyber 'cd ~/life/uni/9-semester-ba/cybersec/'
+alias comprog 'cd ~/life/uni/9-semester-ba/comprog2/CPT'
+alias uni 'cd ~/life/uni/9-semester-ba/'
 
 alias dotf 'cd ~/dev/os/dotfiles'
 alias nixc 'cd ~/dev/os/nix-config'

@@ -1,5 +1,5 @@
 # theme = catppuccin-mocha
-theme = catppuccin-macchiato
+theme = Catppuccin Macchiato
 font-size = 13
 font-family = JetBrainsMono Nerd Font Mono
 background-opacity = 0.92
@@ -10,4 +10,6 @@ adjust-cursor-height = -5%
 cursor-opacity = 0.8
 
 mouse-hide-while-typing = true
+
+keybind = option+backspace=text:\x1b\x7f
 
