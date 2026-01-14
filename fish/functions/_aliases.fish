@@ -1,6 +1,7 @@
 alias cyber 'cd ~/life/uni/9-semester-ba/cybersec/'
 alias comprog 'cd ~/life/uni/9-semester-ba/comprog2/CPT'
 alias uni 'cd ~/life/uni/9-semester-ba/'
+alias sec 'cd ~/life/sec/'
 
 alias dotf 'cd ~/dev/os/dotfiles'
 alias nixc 'cd ~/dev/os/nix-config'
