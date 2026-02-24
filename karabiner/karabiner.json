@@ -61,7 +61,7 @@
                         ]
                     },
                     {
-                        "description": "Tap Caps Lock for ESC or Hold for Control",
+                        "description": "Tap Caps Lock for ESC or Hold for Hyper Key",
                         "manipulators": [
                             {
                                 "from": {
