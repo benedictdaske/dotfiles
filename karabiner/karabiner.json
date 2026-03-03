@@ -40,6 +40,7 @@
                                 "to": [
                                     {
                                         "key_code": "3",
+                                        "lazy": true,
                                         "modifiers": ["left_option"]
                                     }
                                 ],
@@ -53,6 +54,7 @@
                                 "to": [
                                     {
                                         "key_code": "3",
+                                        "lazy": true,
                                         "modifiers": ["left_shift"]
                                     }
                                 ],

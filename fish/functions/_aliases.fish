@@ -1,6 +1,6 @@
-alias cyber 'cd ~/life/uni/9-semester-ba/cybersec/'
-alias comprog 'cd ~/life/uni/9-semester-ba/comprog2/CPT'
-alias uni 'cd ~/life/uni/9-semester-ba/'
+alias comprog 'cd ~/dev/uni/9-semester-ba/comprog2/CPT'
+alias unin 'cd ~/life/uni/9-semester-ba/'
+alias unid 'cd ~/life/uni/9-semester-ba/'
 alias sec 'cd ~/life/sec/'
 
 alias dotf 'cd ~/dev/os/dotfiles'
@@ -12,7 +12,7 @@ alias .. 'cd ..'
 alias ..2 'cd ../..'
 alias ..3 'cd ../../..'
 alias ..4 'cd ../../../..'
-alias ..5 'cd ../../../../..17:24:05'
+alias ..5 'cd ../../../../..'
 
 # alias y yazi
 alias vi nvim
