@@ -1,7 +1,6 @@
-alias comprog 'cd ~/dev/uni/9-semester-ba/comprog2/CPT'
-alias unin 'cd ~/life/uni/9-semester-ba/'
-alias unid 'cd ~/life/uni/9-semester-ba/'
-alias sec 'cd ~/life/sec/'
+alias uni 'cd ~/obsidian/areas/uni/'
+alias unid 'cd ~/dev/uni/ma/'
+alias sec 'cd ~/obsidian/sec/'
 
 alias dotf 'cd ~/dev/os/dotfiles'
 alias nixc 'cd ~/dev/os/nix-config'
@@ -15,9 +14,9 @@ alias ..4 'cd ../../../..'
 alias ..5 'cd ../../../../..'
 
 # alias y yazi
+alias v nvim
 alias vi nvim
 alias vim nvim
-alias v nvim
 alias la 'ls -lisa'
 alias decaf caffeinate
 
